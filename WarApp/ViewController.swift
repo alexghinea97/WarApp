@@ -30,6 +30,13 @@ class ViewController: UIViewController {
 
     @IBAction func dealTapped(_ sender: Any) {
         
+        let leftRandomNumber = arc4random_uniform(13) + 2
+        let rightRandomNumber = arc4random_uniform(13) + 2
+        
+        leftImageView.image = UIImage(named: "card\(leftRandomNumber)")
+        
+        rightImageView.image = UIImage(named: "card\(rightRandomNumber)")
+        
     }
     
 }
